@@ -3,7 +3,7 @@ This ML-based web app predicts Bangalore house prices using user inputs like loc
 ⚙️ Tech Stack
 Machine Learning: Scikit-learn, NumPy, Pandas
 
-Model: Linear Regression (or others like Decision Tree / XGBoost if extended)
+Model: Linear Regression
 
 Backend: Python with Flask
 
