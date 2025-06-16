@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangalore Home Price Prediction</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  
+  <form class="form">
+    <center><h1 style="color: rgb(52, 173, 192);">Bangalore Home Price Prediction</h1></center>
+    <h2>Area (Square Feet)</h2>
+    <input class="area" type="number" id="uiSqft" name="Squareft" value="1000">
+
+    <h2>BHK</h2>
+    <div class="switch_field">
+      <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+      <label for="radio-bhk-1">1 BHK</label>
+      <input type="radio" id="radio-bhk-2" name="uiBHK" value="2"/>
+      <label for="radio-bhk-2">2 BHK</label>
+      <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+      <label for="radio-bhk-3">3 BHK</label>
+      <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+      <label for="radio-bhk-4">4 BHK</label>
+      <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+      <label for="radio-bhk-5">5 BHK</label>
+    </div>
+
+    <h2>Bathroom</h2>
+    <div class="switch_field">
+      <input type="radio" id="radio-bathroom-1" name="uiBathroom" value="1"/>
+      <label for="radio-bathroom-1">1 Bathroom</label>
+      <input type="radio" id="radio-bathroom-2" name="uiBathroom" value="2"/>
+      <label for="radio-bathroom-2">2 Bathroom</label>
+      <input type="radio" id="radio-bathroom-3" name="uiBathroom" value="3"/>
+      <label for="radio-bathroom-3">3 Bathroom</label>
+      <input type="radio" id="radio-bathroom-4" name="uiBathroom" value="4"/>
+      <label for="radio-bathroom-4">4 Bathroom</label>
+      <input type="radio" id="radio-bathroom-5" name="uiBathroom" value="5"/>
+      <label for="radio-bathroom-5">5 Bathroom</label>
+    </div>
+
+    <h2>Location</h2>
+    <div>
+      <select id="uiLocation">
+        <option value="" disabled selected>Select Location</option>
+        </select>
+    </div>
+    <br>
+    <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+    <div id="uiEstimatedPrice" class = "result"> <h2></h2></div>
+  </form>
+</body>
+</html>

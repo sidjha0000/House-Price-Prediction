@@ -1,0 +1,116 @@
+/* Reset and base font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fullscreen layout */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container */
+.container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Headings */
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Number input and dropdown */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #00acc1;
+  outline: none;
+}
+
+/* Radio button group */
+.switch_field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.switch_field input[type="radio"] {
+  display: none;
+}
+
+.switch_field label {
+  padding: 10px 16px;
+  border: 2px solid #00acc1;
+  border-radius: 10px;
+  background-color: white;
+  color: #00acc1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.switch_field input[type="radio"]:checked + label {
+  background-color: #00acc1;
+  color: white;
+}
+
+/* Predict button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00acc1;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007e8c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .switch_field label {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
