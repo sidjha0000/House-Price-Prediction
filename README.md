@@ -31,4 +31,3 @@ Handled missing values
 Encoded categorical variables (like location) using one-hot encoding
 
 Removed outliers for better accuracy
-![SID](https://github.com/user-attachments/assets/79165bfe-d86c-424e-a95d-0babeafa5b27)
